@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automatización de procesos | Cytronics Plant</title>
+  <meta name="description" content="Programación de PLC, HMI, variadores y sistemas SCADA. Integramos hardware y software para optimizar y controlar procesos industriales.">
+  <meta name="theme-color" content="#0a1442">
+  <meta property="og:title" content="Automatización de procesos | Cytronics Plant">
+  <meta property="og:description" content="Programación de PLC, HMI, variadores y sistemas SCADA. Integramos hardware y software para optimizar y controlar procesos industriales.">
+  <meta property="og:image" content="../img/hero.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="../img/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo" aria-label="Cytronics Plant, inicio">
+        <img src="../img/logo.png" alt="Cytronics Plant" width="1200" height="226">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="../index.html#nosotros">Nosotros</a>
+        <div class="nav__group">
+          <a href="../index.html#servicios" class="nav__parent is-current">Servicios
+            <svg class="nav__caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+          </a>
+          <div class="nav__dropdown">
+            <a href="../servicios/asistencia-tecnica.html"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.8-.6-.6-2.8z"/></svg><span>Asistencia técnica</span></a>
+            <a href="../servicios/diseno-fabricacion.html"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M9 9v12M13 13h4M13 17h4"/></svg><span>Diseño y fabricación</span></a>
+            <a href="../servicios/automatizacion-procesos.html" aria-current="page"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8"/><path d="M8 1v3M12 1v3M16 1v3M8 20v3M12 20v3M16 20v3M1 8h3M1 12h3M1 16h3M20 8h3M20 12h3M20 16h3"/></svg><span>Automatización de procesos</span></a>
+            <a href="../servicios/ia-industria-40.html"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M5 19l2.8-2.8M16.2 7.8 19 5"/></svg><span>Inteligencia artificial e Industria 4.0</span></a>
+            <a href="../servicios/formacion-docencia.html"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></svg><span>Formación y docencia</span></a>
+            <a href="../servicios/mantenimiento-servomotores.html"><svg class="icon icon--sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/><circle cx="12" cy="12" r="7"/></svg><span>Mantenimiento de servomotores industriales</span></a>
+          </div>
+        </div>
+        <a href="../index.html#proyectos">Proyectos</a>
+        <a href="../index.html#valores">Valores</a>
+        <a href="#contacto" class="btn btn--primary btn--sm">Contáctenos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-hero page-hero--img">
+      <div class="page-hero__bg" style="background-image:url('../img/hero.jpg')" aria-hidden="true"></div>
+      <div class="container page-hero__inner">
+        <nav class="crumbs anim" style="--d:0" aria-label="Ruta"><a href="../index.html">Inicio</a><span>/</span><a href="../index.html#servicios">Servicios</a><span>/</span><span aria-current="page">Automatización de procesos</span></nav>
+        <span class="page-hero__icon anim" style="--d:1"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="8" y="8" width="8" height="8"/><path d="M8 1v3M12 1v3M16 1v3M8 20v3M12 20v3M16 20v3M1 8h3M1 12h3M1 16h3M20 8h3M20 12h3M20 16h3"/></svg></span>
+        <h1 class="anim" style="--d:1">Automatización de procesos</h1>
+        <p class="page-hero__lead anim" style="--d:2">Programación de PLC, HMI, variadores y sistemas SCADA. Integramos hardware y software para optimizar y controlar procesos industriales.</p>
+        <div class="hero__actions anim" style="--d:3">
+          <a href="#contacto" class="btn btn--accent">Solicitar cotización</a>
+          <a href="https://wa.me/593960071515?text=Hola%20Cytronics%20Plant%2C%20quisiera%20informaci%C3%B3n%20sobre%20Automatizaci%C3%B3n%20de%20procesos" target="_blank" rel="noopener" class="btn btn--ghost">Consultar por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Qué incluye</p>
+        <h2>Alcance del servicio</h2>
+        <div class="features">
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Programación de PLC</h3><p>Lógica de control para procesos nuevos o existentes.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Interfaces HMI</h3><p>Pantallas de operación con modo manual/automático, niveles de usuario e historial.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Variadores de frecuencia</h3><p>Configuración y control de motores.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Sistemas SCADA</h3><p>Supervisión y control centralizado del proceso.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Arquitecturas maestro-esclavo</h3><p>Varios controladores trabajando coordinados.</p></div>
+          </div>
+          <div class="feature">
+            <span class="feature__icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <div><h3>Integración hardware-software</h3><p>Conectamos equipos de distintas marcas en un solo sistema.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Aplicaciones</p>
+          <h2>Dónde lo aplicamos</h2>
+          <ul class="checklist">
+            <li>Sistemas de bombeo</li>
+            <li>Control de temperatura</li>
+            <li>Líneas de producción</li>
+            <li>Supervisión de procesos</li>
+          </ul>
+        </div>
+        <div>
+          <p class="eyebrow">Tecnologías</p>
+          <h2>Con qué trabajamos</h2>
+          <div class="chips">
+            <span>PLC y HMI Delta</span>
+            <span>PLC Siemens</span>
+            <span>Variadores de frecuencia</span>
+            <span>SCADA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Experiencia en campo</p>
+        <h2>Proyecto relacionado</h2>
+        <div class="svc-project">
+          <article class="project">
+            <p class="project__client c-blue">Hospital San Francisco</p>
+            <h3>Sistema de bombeo de agua automatizado</h3>
+            <p>Arquitectura maestro-esclavo con dos HMI Delta, interfaz con modo manual/automático, niveles de usuario e historial.</p>
+          </article>
+          <div class="results results--stack">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--muted">
+      <div class="container">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2>De la visita técnica a la puesta en marcha</h2>
+        <ol class="steps">
+          <li class="step"><span class="step__num">1</span><h3>Visita técnica sin costo</h3><p>Evaluamos su instalación en sitio.</p></li>
+          <li class="step"><span class="step__num">2</span><h3>Diagnóstico</h3><p>Identificamos oportunidades de mejora y riesgos.</p></li>
+          <li class="step"><span class="step__num">3</span><h3>Propuesta a medida</h3><p>Alcance, tiempos y costos claros.</p></li>
+          <li class="step"><span class="step__num">4</span><h3>Ejecución y soporte</h3><p>Implementamos y damos continuidad operativa.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Otras áreas</p>
+        <h2>Más servicios de Cytronics Plant</h2>
+        <div class="mini-grid">
+          <a class="mini-card" href="asistencia-tecnica.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8V21h3.2l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.8-.6-.6-2.8z"/></svg><span>Asistencia técnica</span></a>
+          <a class="mini-card" href="diseno-fabricacion.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 9h18M9 9v12M13 13h4M13 17h4"/></svg><span>Diseño y fabricación</span></a>
+          <a class="mini-card" href="ia-industria-40.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M5 19l2.8-2.8M16.2 7.8 19 5"/></svg><span>Inteligencia artificial e Industria 4.0</span></a>
+          <a class="mini-card" href="formacion-docencia.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></svg><span>Formación y docencia</span></a>
+          <a class="mini-card" href="mantenimiento-servomotores.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/><circle cx="12" cy="12" r="7"/></svg><span>Mantenimiento de servomotores industriales</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contacto">
+      <div class="cta__circle" aria-hidden="true"></div>
+      <div class="container cta__inner">
+        <div class="cta__intro">
+          <span class="cta__bar" aria-hidden="true"></span>
+          <h2>Construyamos juntos<br>la Industria 4.0</h2>
+          <p class="cta__lead">Agende una visita técnica sin costo: evaluamos su instalación, identificamos oportunidades de mejora y le presentamos una propuesta a medida.</p>
+          <ul class="contact-list">
+            <li><a href="https://wa.me/593960071515?text=Hola%20Cytronics%20Plant%2C%20quisiera%20agendar%20una%20visita%20t%C3%A9cnica." target="_blank" rel="noopener">
+              <span class="contact-list__label">WhatsApp</span><span class="contact-list__value">0960071515</span></a></li>
+            <li><a href="mailto:cytronicsplant@gmail.com">
+              <span class="contact-list__label">Correo</span><span class="contact-list__value">cytronicsplant@gmail.com</span></a></li>
+            <li><a href="tel:+593960071515">
+              <span class="contact-list__label">Llamar</span><span class="contact-list__value">+593 96 007 1515</span></a></li>
+            <li><span class="contact-list__label">Ubicación</span><span class="contact-list__value">Quito · Ecuador</span></li>
+          </ul>
+        </div>
+
+        <form class="form" action="https://formsubmit.co/ajax/cytronicsplant@gmail.com" method="POST" data-form novalidate>
+          <h3 class="form__title">Solicite información o una visita técnica</h3>
+          <input type="hidden" name="_subject" value="Nueva solicitud web – Automatización de procesos">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" class="form__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form__row">
+            <label class="field"><span>Nombre *</span>
+              <input type="text" name="nombre" autocomplete="name" required></label>
+            <label class="field"><span>Empresa</span>
+              <input type="text" name="empresa" autocomplete="organization"></label>
+          </div>
+          <div class="form__row">
+            <label class="field"><span>Correo *</span>
+              <input type="email" name="email" autocomplete="email" required></label>
+            <label class="field"><span>Teléfono</span>
+              <input type="tel" name="telefono" autocomplete="tel" inputmode="tel"></label>
+          </div>
+          <label class="field"><span>Servicio de interés</span>
+            <select name="servicio">
+              <option value="">Seleccione una opción</option>
+              <option>Asistencia técnica</option>
+              <option>Diseño y fabricación</option>
+              <option selected>Automatización de procesos</option>
+              <option>Inteligencia artificial e Industria 4.0</option>
+              <option>Formación y docencia</option>
+              <option>Mantenimiento de servomotores industriales</option>
+              <option>Otro</option>
+            </select></label>
+          <label class="field"><span>Mensaje *</span>
+            <textarea name="mensaje" rows="4" required placeholder="Cuéntenos brevemente qué necesita"></textarea></label>
+          <button type="submit" class="btn btn--accent form__submit">Enviar solicitud</button>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="footer__logo"><img src="../img/logo.png" alt="Cytronics Plant" loading="lazy" width="1200" height="226"></div>
+        <p class="footer__about">Automatización, mantenimiento eléctrico y electrónico, diseño y fabricación de equipos industriales e integración de inteligencia artificial.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="../servicios/asistencia-tecnica.html">Asistencia técnica</a></li>
+          <li><a href="../servicios/diseno-fabricacion.html">Diseño y fabricación</a></li>
+          <li><a href="../servicios/automatizacion-procesos.html">Automatización de procesos</a></li>
+          <li><a href="../servicios/ia-industria-40.html">Inteligencia artificial e Industria 4.0</a></li>
+          <li><a href="../servicios/formacion-docencia.html">Formación y docencia</a></li>
+          <li><a href="../servicios/mantenimiento-servomotores.html">Mantenimiento de servomotores industriales</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/593960071515" target="_blank" rel="noopener">WhatsApp 0960071515</a></li>
+          <li><a href="mailto:cytronicsplant@gmail.com">cytronicsplant@gmail.com</a></li>
+          <li>Quito · Ecuador</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Cytronics Plant</p>
+      <p class="footer__tag">Automatización · Integración · Inteligencia · Innovación</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/593960071515?text=Hola%20Cytronics%20Plant%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2 7L3 29l6.4-2c2 1.1 4.3 1.7 6.6 1.7 7.2 0 13-5.7 13-12.8S23.2 3 16 3zm0 23.4c-2.1 0-4.1-.6-5.9-1.7l-.4-.3-3.8 1.2 1.2-3.7-.3-.4c-1.2-1.8-1.9-3.9-1.9-6.1C4.9 9.8 9.9 5 16 5s11.1 4.8 11.1 10.8S22.1 26.4 16 26.4zm6.1-8c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.5c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.2 2.4 3.7 5.9 5.1 2.9 1.1 3.5.9 4.1.9.6-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.7-.5z"/></svg>
+  </a>
+
+  <script src="../script.js"></script>
+</body>
+</html>
