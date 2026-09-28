@@ -16,6 +16,16 @@ CORREO = "cytronicsplant@gmail.com"
 # con un enlace de activación que hay que aprobar una sola vez desde ese correo.
 FORM_ENDPOINT = f"https://formsubmit.co/ajax/{CORREO}"
 WA_URL = f"https://wa.me/{TEL_INTL}"
+# Opciones del panel de WhatsApp: cada una abre el chat con el mensaje ya escrito.
+WA_OPCIONES = [
+    "Domótica y energía fotovoltaica",
+    "Automatización industrial (PLC, HMI, SCADA)",
+    "Mantenimiento eléctrico y electrónico",
+    "Diseño y fabricación de tableros y equipos",
+    "Mantenimiento de servomotores",
+    "Inteligencia artificial e Industria 4.0",
+    "Formación y capacitación",
+]
 
 # ---------------------------------------------------------------- íconos
 ICONOS = {
@@ -324,14 +334,42 @@ def footer(r):
     </div>
   </footer>
 
-  <a class="wa-float" href="{WA_URL}?text=Hola%20Cytronics%20Plant%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-    {WA_SVG}
-  </a>
+{wa_panel()}
 
   <script src="{r}script.js"></script>
 </body>
 </html>
 """
+
+
+def wa_panel():
+    """Botón flotante de WhatsApp con panel de opciones (sin JS, el botón abre el chat directo)."""
+    def enlace(texto):
+        return f"{WA_URL}?text={quote(texto)}"
+    opciones = "\n".join(
+        f'        <li><a href="{enlace("Hola Cytronics Plant, deseo información sobre: " + o + ".")}" target="_blank" rel="noopener">{o}</a></li>'
+        for o in WA_OPCIONES
+    )
+    return f"""  <div class="wa" data-wa>
+    <div class="wa-panel" id="wa-panel" role="dialog" aria-label="Escribir por WhatsApp" hidden>
+      <div class="wa-panel__head">
+        <span class="wa-panel__avatar">{WA_SVG}</span>
+        <div><strong>Cytronics Plant</strong><small>Responde por WhatsApp</small></div>
+        <button type="button" class="wa-panel__close" aria-label="Cerrar" data-wa-close>&times;</button>
+      </div>
+      <div class="wa-panel__body">
+        <p class="wa-panel__bubble">Gracias por comunicarse con Cytronics Plant. ¿Sobre qué desea información?</p>
+        <ul class="wa-panel__options">
+{opciones}
+          <li><a href="{enlace("Hola Cytronics Plant, quisiera más información.")}" target="_blank" rel="noopener">Otro tema</a></li>
+        </ul>
+        <p class="wa-panel__note">Cualquier duda que tenga, háganosla saber.</p>
+      </div>
+    </div>
+    <a class="wa-float" href="{enlace("Hola Cytronics Plant, quisiera más información.")}" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" aria-controls="wa-panel" aria-expanded="false">
+      {WA_SVG}
+    </a>
+  </div>"""
 
 
 def circuito():

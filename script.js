@@ -138,3 +138,20 @@ document.querySelectorAll('[data-form]').forEach((form) => {
 });
 
 document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
+
+// Panel de WhatsApp: el botón abre las opciones en vez de ir directo al chat
+const wa = document.querySelector('[data-wa]');
+if (wa) {
+  const panel = wa.querySelector('.wa-panel');
+  const btn = wa.querySelector('.wa-float');
+  const setWa = (open) => {
+    panel.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+    wa.classList.toggle('is-open', open);
+  };
+  btn.addEventListener('click', (e) => { e.preventDefault(); setWa(panel.hidden); });
+  wa.querySelector('[data-wa-close]').addEventListener('click', () => { setWa(false); btn.focus(); });
+  panel.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => setWa(false)));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !panel.hidden) { setWa(false); btn.focus(); } });
+  document.addEventListener('click', (e) => { if (!panel.hidden && !wa.contains(e.target)) setWa(false); });
+}
